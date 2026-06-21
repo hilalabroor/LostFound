@@ -1,17 +1,6 @@
-# Project Mobile Programming
+# Lost&Found
 
-## Final Project Android Kotlin
-
----
-
-
-# 🔍 6. Lost & Found
-
-## "Bantu Temukan Barang yang Hilang"
-
-### 📌 Deskripsi
-
-Lost & Found adalah aplikasi untuk melaporkan barang hilang dan barang ditemukan di lingkungan kampus.
+Lost&Found adalah aplikasi mobile yang membantu masyarakat Kota Mataram melaporkan, mencari, dan menemukan kembali barang yang hilang maupun barang yang ditemukan. Pengguna dapat mengunggah informasi barang, foto, lokasi kejadian, deskripsi, tanggal, serta kontak yang dapat dihubungi. Aplikasi ini diharapkan menjadi pusat informasi barang hilang dan ditemukan yang lebih terstruktur, mudah dicari, dan dapat diakses oleh masyarakat Kota Mataram.
 
 ---
 
