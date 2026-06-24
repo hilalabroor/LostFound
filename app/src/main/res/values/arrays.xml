@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- Pilihan kategori barang -->
+    <string-array name="item_categories">
+        <item>Pilih kategori</item>
+        <item>Dompet</item>
+        <item>Tas</item>
+        <item>Handphone</item>
+        <item>Laptop</item>
+        <item>Kunci</item>
+        <item>Kartu Identitas</item>
+        <item>Kartu ATM</item>
+        <item>Dokumen</item>
+        <item>Elektronik</item>
+        <item>Perhiasan</item>
+        <item>Hewan Peliharaan</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <!-- Enam kecamatan di Kota Mataram -->
+    <string-array name="mataram_areas">
+        <item>Pilih wilayah</item>
+        <item>Ampenan</item>
+        <item>Cakranegara</item>
+        <item>Mataram</item>
+        <item>Sandubaya</item>
+        <item>Sekarbela</item>
+        <item>Selaparang</item>
+        <item>Wilayah lainnya</item>
+    </string-array>
+
+    <!-- Filter jenis laporan -->
+    <string-array name="search_report_types">
+        <item>Semua jenis laporan</item>
+        <item>Barang Hilang</item>
+        <item>Barang Ditemukan</item>
+    </string-array>
+
+    <!-- Filter kategori -->
+    <string-array name="search_categories">
+        <item>Semua kategori</item>
+        <item>Dompet</item>
+        <item>Tas</item>
+        <item>Handphone</item>
+        <item>Laptop</item>
+        <item>Kunci</item>
+        <item>Kartu Identitas</item>
+        <item>Kartu ATM</item>
+        <item>Dokumen</item>
+        <item>Elektronik</item>
+        <item>Perhiasan</item>
+        <item>Hewan Peliharaan</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <!-- Filter status laporan -->
+    <string-array name="search_statuses">
+        <item>Semua status</item>
+        <item>Belum selesai</item>
+        <item>Sudah dikembalikan</item>
+    </string-array>
+
+</resources>
