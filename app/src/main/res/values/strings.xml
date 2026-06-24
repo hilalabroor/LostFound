@@ -11,6 +11,48 @@
     <string name="login_clicked">Tombol Masuk ditekan"></string>
     <string name="register_clicked">Tombol Daftar ditekan"></string>
 
+    <!-- Profil dan statistik -->
+    <string name="profile_title">Profil Saya</string>
+    <string name="profile_description">
+    Informasi akun dan aktivitas laporan kamu.
+</string>
+
+    <string name="name_label">Nama</string>
+    <string name="email_label">Email</string>
+    <string name="phone_label">Nomor WhatsApp</string>
+    <string name="phone_not_available">Nomor belum ditambahkan</string>
+
+    <string name="activity_statistics">Statistik Aktivitas</string>
+    <string name="total_reports">Semua Laporan</string>
+    <string name="active_reports">Masih Aktif</string>
+    <string name="completed_reports">Selesai</string>
+    <string name="saved_reports">Bookmark</string>
+
+    <string name="edit_profile">Edit Profil</string>
+    <string name="logout">Keluar</string>
+
+    <string name="edit_profile_title">Edit Profil</string>
+    <string name="edit_profile_description">
+    Ubah nama dan nomor WhatsApp akun kamu.
+</string>
+
+    <string name="profile_name_hint">Masukkan nama lengkap</string>
+    <string name="profile_phone_hint">Contoh: 081234567890</string>
+    <string name="save_profile">Simpan Perubahan</string>
+    <string name="saving_profile">Menyimpan...</string>
+
+    <string name="profile_updated">Profil berhasil diperbarui</string>
+    <string name="profile_update_failed">
+    Profil gagal diperbarui: %1$s
+</string>
+
+    <string name="profile_not_found">Data profil tidak ditemukan</string>
+    <string name="logout_confirmation_title">Keluar dari Akun</string>
+    <string name="logout_confirmation_message">
+    Apakah kamu yakin ingin keluar dari akun?
+</string>
+
+
 
 
 </resources>
