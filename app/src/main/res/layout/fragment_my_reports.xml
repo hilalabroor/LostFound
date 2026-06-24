@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -13,10 +12,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingStart="20dp"
+        android:paddingStart="24dp"
         android:paddingTop="20dp"
-        android:paddingEnd="20dp"
-        android:paddingBottom="12dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="16dp"
+        android:background="@color/lf_card"
+        android:elevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -31,23 +32,25 @@
             android:text="@string/back"
             android:textColor="@color/lf_primary"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:drawableStartCompat="@android:drawable/ic_menu_revert"
+            android:drawablePadding="8dp" />
 
         <!-- Judul -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="8dp"
             android:text="@string/my_reports_title"
             android:textColor="@color/lf_text_primary"
-            android:textSize="27sp"
+            android:textSize="28sp"
             android:textStyle="bold" />
 
         <!-- Penjelasan -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
+            android:layout_marginTop="4dp"
             android:text="@string/my_reports_description"
             android:textColor="@color/lf_text_secondary"
             android:textSize="14sp" />
@@ -60,8 +63,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:clipToPadding="false"
-        android:paddingTop="4dp"
-        android:paddingBottom="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,8 +73,8 @@
     <!-- Loading -->
     <ProgressBar
         android:id="@+id/progressBar"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -89,6 +92,8 @@
         android:textColor="@color/lf_text_secondary"
         android:textSize="16sp"
         android:visibility="gone"
+        app:drawableTopCompat="@android:drawable/ic_dialog_info"
+        android:drawablePadding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
