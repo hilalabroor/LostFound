@@ -21,11 +21,96 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
+=======
             android:text="@string/profile_title"
+>>>>>>> ea583b5c792fa01d7cd96dd7c2fbffdc653c8f58
             android:textColor="@color/lf_text_primary"
             android:textSize="28sp"
             android:textStyle="bold" />
 
+<<<<<<< HEAD
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EAF2FF"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mataram Lost Found"
+                android:textColor="#1565C0"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAvatar"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_profile_avatar"
+                android:gravity="center"
+                android:text="B"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Budi Santoso"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvEmailValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="budi.santoso@email.com"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_phone_chip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/bg_phone_chip" />
+
+                <TextView
+                    android:id="@+id/tvPhoneValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:text="+62 812-3456-7890"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Card informasi akun -->
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="12dp">
+=======
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -70,10 +155,95 @@
             app:cardElevation="2dp"
             app:strokeColor="@color/lf_border"
             app:strokeWidth="1dp">
+>>>>>>> ea583b5c792fa01d7cd96dd7c2fbffdc653c8f58
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+<<<<<<< HEAD
+                android:orientation="vertical">
+
+                <!-- Edit Profil -->
+                <LinearLayout
+                    android:id="@+id/btnEditProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="16dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_person"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="12dp"
+                        android:text="Edit Profil"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_chevron_right"/>
+                </LinearLayout>
+
+                <!-- Postingan Saya -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="16dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_postingan"
+                        app:tint="@color/lf_primary"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="12dp"
+                        android:text="Postingan Saya"/>
+
+                    <TextView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/bg_badge"/>
+                </LinearLayout>
+
+                <!-- Logout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="16dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_logout"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="12dp"
+                        android:text="Keluar"
+                        android:textColor="#E53935"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_chevron_right"/>
+                </LinearLayout>
+=======
                 android:orientation="vertical"
                 android:padding="18dp">
 
@@ -141,6 +311,7 @@
                     android:text="@string/phone_not_available"
                     android:textColor="@color/lf_text_primary"
                     android:textSize="16sp" />
+>>>>>>> ea583b5c792fa01d7cd96dd7c2fbffdc653c8f58
 
             </LinearLayout>
 
@@ -153,7 +324,11 @@
             android:layout_marginTop="26dp"
             android:text="@string/activity_statistics"
             android:textColor="@color/lf_text_primary"
+<<<<<<< HEAD
+            android:textSize="30sp"
+=======
             android:textSize="19sp"
+>>>>>>> ea583b5c792fa01d7cd96dd7c2fbffdc653c8f58
             android:textStyle="bold" />
 
         <!-- Baris statistik pertama -->
@@ -185,7 +360,11 @@
                         android:layout_height="wrap_content"
                         android:text="0"
                         android:textColor="@color/lf_primary"
+<<<<<<< HEAD
+                        android:textSize="30sp"
+=======
                         android:textSize="28sp"
+>>>>>>> ea583b5c792fa01d7cd96dd7c2fbffdc653c8f58
                         android:textStyle="bold" />
 
                     <TextView
@@ -334,6 +513,8 @@
 
         </LinearLayout>
 
+<<<<<<< HEAD
+=======
         <!-- Edit Profil -->
         <Button
             android:id="@+id/btnEditProfile"
@@ -360,6 +541,7 @@
             android:textSize="15sp"
             android:textStyle="bold" />
 
+>>>>>>> ea583b5c792fa01d7cd96dd7c2fbffdc653c8f58
     </LinearLayout>
 
 </ScrollView>

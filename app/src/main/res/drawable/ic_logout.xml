@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Pintu -->
+    <path
+        android:fillColor="#EF5350"
+        android:pathData="M4,4h9v16H4z"/>
+
+    <!-- Handle pintu -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M10,11h1v2h-1z"/>
+
+    <!-- Panah keluar -->
+    <path
+        android:fillColor="#EF5350"
+        android:pathData="M14,12l-3,-3v2h-3v2h3v2z"/>
+
+</vector>

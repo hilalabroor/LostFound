@@ -1,16 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<<<<<<< HEAD
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+=======
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lf_background"
+>>>>>>> ea583b5c792fa01d7cd96dd7c2fbffdc653c8f58
     android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+<<<<<<< HEAD
+        android:padding="20dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_chevron_left"
+                android:textSize="24sp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Edit Profile"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/lf_primary" />
+        </LinearLayout>
+
+        <!-- Avatar -->
+        <TextView
+            android:id="@+id/tvAvatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_profile_avatar"
+            android:gravity="center"
+            android:text="B"
+            android:textColor="@android:color/white"
+            android:textSize="42sp"
+            android:textStyle="bold" />
+
+        <!-- Full Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="Full Name"
+            android:textSize="12sp"
+            android:textColor="#555555" />
+=======
         android:paddingStart="24dp"
         android:paddingTop="20dp"
         android:paddingEnd="24dp"
@@ -53,10 +111,29 @@
             android:textColor="@color/lf_text_primary"
             android:textSize="15sp"
             android:textStyle="bold" />
+>>>>>>> ea583b5c792fa01d7cd96dd7c2fbffdc653c8f58
 
         <EditText
             android:id="@+id/etName"
             android:layout_width="match_parent"
+<<<<<<< HEAD
+            android:layout_height="52dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_edit_profile"
+            android:paddingHorizontal="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:inputType="textPersonName" />
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Email Address"
+            android:textSize="12sp"
+            android:textColor="#555555" />
+=======
             android:layout_height="56dp"
             android:layout_marginTop="8dp"
             android:hint="@string/profile_name_hint"
@@ -74,10 +151,28 @@
             android:textColor="@color/lf_text_primary"
             android:textSize="15sp"
             android:textStyle="bold" />
+>>>>>>> ea583b5c792fa01d7cd96dd7c2fbffdc653c8f58
 
         <EditText
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
+<<<<<<< HEAD
+            android:layout_height="52dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_edit_profile"
+            android:enabled="false"
+            android:paddingHorizontal="12dp"
+            android:textColor="#000000" />
+
+        <!-- Phone -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="WhatsApp Number"
+            android:textSize="12sp"
+            android:textColor="#555555" />
+=======
             android:layout_height="56dp"
             android:layout_marginTop="8dp"
             android:enabled="false"
@@ -95,10 +190,52 @@
             android:textColor="@color/lf_text_primary"
             android:textSize="15sp"
             android:textStyle="bold" />
+>>>>>>> ea583b5c792fa01d7cd96dd7c2fbffdc653c8f58
 
         <EditText
             android:id="@+id/etPhone"
             android:layout_width="match_parent"
+<<<<<<< HEAD
+            android:layout_height="52dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_edit_profile"
+            android:inputType="phone"
+            android:maxLength="15"
+            android:paddingHorizontal="12dp"
+            android:textColor="#000000" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:visibility="gone" />
+
+        <!-- Save -->
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/lf_primary"
+            android:text="Save Changes"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <!-- Cancel -->
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_cancel_button"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+=======
             android:layout_height="56dp"
             android:layout_marginTop="8dp"
             android:hint="@string/profile_phone_hint"
@@ -130,6 +267,7 @@
             android:textSize="16sp"
             android:textStyle="bold" />
 
+>>>>>>> ea583b5c792fa01d7cd96dd7c2fbffdc653c8f58
     </LinearLayout>
 
 </ScrollView>
