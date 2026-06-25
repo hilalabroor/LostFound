@@ -38,13 +38,13 @@
                 android:id="@+id/tvReportType"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="top|end"
+                android:layout_gravity="top"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="12dp"
                 android:background="@drawable/bg_badge_lost"
                 android:paddingStart="12dp"
-                android:paddingEnd="12dp"
                 android:paddingTop="6dp"
+                android:paddingEnd="12dp"
                 android:paddingBottom="6dp"
                 android:text="@string/report_lost"
                 android:textColor="@color/white"
@@ -77,11 +77,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
+                android:drawablePadding="12dp"
                 android:text="Dompet"
-                android:textColor="@color/lf_text_secondary"
+                android:textColor="@color/black"
                 android:textSize="14sp"
-                app:drawableStartCompat="@drawable/ic_category_my_report"
-                android:drawablePadding="12dp" />
+                app:drawableStartCompat="@drawable/ic_category_my_report" />
 
             <!-- Lokasi -->
             <TextView
@@ -89,13 +89,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
+                android:drawablePadding="11dp"
                 android:ellipsize="end"
                 android:maxLines="2"
                 android:text="Cakranegara"
-                android:textColor="@color/lf_text_secondary"
+                android:textColor="@color/black"
                 android:textSize="14sp"
-                app:drawableStartCompat="@drawable/ic_location_my_report"
-                android:drawablePadding="11dp" />
+                app:drawableStartCompat="@drawable/ic_location_my_report" />
 
             <!-- Tanggal -->
             <TextView
@@ -103,11 +103,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
+                android:drawablePadding="12dp"
                 android:text="22 Juni 2026"
-                android:textColor="@color/lf_text_secondary"
+                android:textColor="@color/black"
                 android:textSize="14sp"
-                app:drawableStartCompat="@drawable/ic_date_my_report"
-                android:drawablePadding="12dp" />
+                app:drawableStartCompat="@drawable/ic_date_my_report" />
 
             <!-- Status laporan -->
             <TextView
@@ -155,14 +155,14 @@
                     android:id="@+id/btnEdit"
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="@string/edit_report"
                     android:textAllCaps="false"
                     android:textColor="@color/lf_status_open"
-                    app:strokeColor="@color/lf_status_open"
                     android:textStyle="bold"
-                    app:cornerRadius="8dp" />
+                    app:cornerRadius="8dp"
+                    app:strokeColor="@color/lf_status_open" />
             </LinearLayout>
 
             <!-- Tombol status dan hapus -->
@@ -177,7 +177,7 @@
                     android:id="@+id/btnDelete"
                     style="@style/Widget.MaterialComponents.Button.TextButton"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:text="@string/delete_report"
                     android:textAllCaps="false"
                     android:textColor="@color/lf_lost"
