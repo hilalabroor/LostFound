@@ -6,11 +6,10 @@
 
 <!--    tombol  -->
     <string name="login">Masuk"></string>
-    <string name="register">Daftar Akun"></string>
+    <string name="register">Daftar"></string>
+    <string name="no_account">Belum punya akun?</string>
 
     <string name="login_clicked">Tombol Masuk ditekan"></string>
     <string name="register_clicked">Tombol Daftar ditekan"></string>
-
-
 
 </resources>
