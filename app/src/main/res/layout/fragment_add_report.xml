@@ -100,7 +100,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textCapWords"
-                android:maxLines="1" />
+                android:maxLines="1"
+                android:textColor="#000000" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Kategori (tetap Spinner, menggunakan MaterialCardView sebagai border) -->
@@ -175,7 +176,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="top"
                 android:inputType="textCapSentences|textMultiLine"
-                android:minHeight="80dp" />
+                android:minHeight="80dp"
+                android:textColor="#000000" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Tanggal -->
@@ -195,7 +197,8 @@
                 android:clickable="true"
                 android:cursorVisible="false"
                 android:focusable="false"
-                android:inputType="none" />
+                android:inputType="none"
+                android:textColor="#000000" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Deskripsi -->
@@ -212,7 +215,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="top"
                 android:inputType="textCapSentences|textMultiLine"
-                android:minHeight="120dp" />
+                android:minHeight="120dp"
+                android:textColor="#070707" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Nomor WhatsApp -->
@@ -230,7 +234,8 @@
                 android:layout_height="wrap_content"
                 android:inputType="phone"
                 android:maxLength="15"
-                android:maxLines="1" />
+                android:maxLines="1"
+                android:textColor="#000000" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Foto barang -->
