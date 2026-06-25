@@ -257,4 +257,21 @@
     Apakah kamu yakin ingin keluar dari akun?
 </string>
 
+    <!-- Pencarian terpisah -->
+    <string name="search_form_title">Cari Laporan</string>
+    <string name="search_form_description">
+    Masukkan kata kunci atau gunakan filter untuk menemukan laporan.
+</string>
+
+    <string name="search_now">Tampilkan Hasil</string>
+    <string name="search_result_title">Hasil Pencarian</string>
+    <string name="change_search">Ubah Pencarian</string>
+
+    <string name="search_result_count">%1$d laporan ditemukan</string>
+    <string name="search_result_empty">
+    Tidak ada laporan yang sesuai dengan pencarian.
+</string>
+
+    <string name="all_search_results">Menampilkan semua laporan</string>
+
 </resources>

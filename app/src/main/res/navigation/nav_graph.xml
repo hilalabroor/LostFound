@@ -173,7 +173,19 @@
         android:label="Cari Laporan">
 
         <action
-            android:id="@+id/action_searchFragment_to_detailItemFragment"
+            android:id="@+id/action_searchFragment_to_searchResultFragment"
+            app:destination="@id/searchResultFragment" />
+
+    </fragment>
+
+    <!-- Halaman hasil pencarian -->
+    <fragment
+        android:id="@+id/searchResultFragment"
+        android:name="com.example.lostfound.ui.search.SearchResultFragment"
+        android:label="Hasil Pencarian">
+
+        <action
+            android:id="@+id/action_searchResultFragment_to_detailItemFragment"
             app:destination="@id/detailItemFragment" />
 
     </fragment>
