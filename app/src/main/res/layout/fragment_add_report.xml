@@ -72,18 +72,29 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:layout_marginEnd="8dp"
                 android:minHeight="48dp"
+                android:button="@android:color/transparent"
+                android:buttonTint="@android:color/transparent"
+                android:background="@drawable/bg_report_type_button"
+                android:gravity="center"
                 android:text="@string/lost_item"
-                android:textColor="@color/lf_text_primary" />
+                android:textColor="@color/color_report_type_text"
+                android:checked="true" />
 
             <RadioButton
                 android:id="@+id/rbFound"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:layout_marginStart="8dp"
                 android:minHeight="48dp"
+                android:button="@android:color/transparent"
+                android:buttonTint="@android:color/transparent"
+                android:background="@drawable/bg_report_type_button"
+                android:gravity="center"
                 android:text="@string/found_item"
-                android:textColor="@color/lf_text_primary" />
+                android:textColor="@color/color_report_type_text" />
 
         </RadioGroup>
 
@@ -93,6 +104,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp"
             android:hint="@string/item_name_label">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -168,6 +183,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp"
             android:hint="@string/location_detail_label">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -186,6 +205,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp"
             android:hint="@string/event_date_form_label"
             app:endIconMode="custom"
             app:endIconDrawable="@android:drawable/ic_menu_my_calendar">
@@ -207,6 +230,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp"
             android:hint="@string/item_description_form_label">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -225,6 +252,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp"
             android:hint="@string/contact_form_label"
             app:startIconDrawable="@android:drawable/ic_menu_call">
 
@@ -252,7 +283,7 @@
             android:layout_width="match_parent"
             android:layout_height="220dp"
             android:layout_marginTop="12dp"
-            app:cardCornerRadius="12dp"
+            app:cardCornerRadius="16dp"
             app:cardElevation="0dp"
             app:strokeWidth="1dp"
             app:strokeColor="@color/lf_border">
@@ -288,7 +319,7 @@
             android:textColor="@color/lf_secondary"
             app:strokeColor="@color/lf_secondary"
             android:textStyle="bold"
-            app:cornerRadius="8dp"
+            app:cornerRadius="16dp"
             app:icon="@android:drawable/ic_menu_camera"
             app:iconTint="@color/lf_secondary"
             app:iconGravity="textStart" />
