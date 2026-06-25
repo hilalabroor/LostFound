@@ -23,7 +23,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="180dp">
-            
+
             <ImageView
                 android:id="@+id/ivReportImage"
                 android:layout_width="match_parent"
@@ -41,7 +41,7 @@
 
                 <TextView
                     android:id="@+id/tvReportType"
-                    android:layout_width="309dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_gravity="top"
                     android:layout_marginTop="12dp"
@@ -56,10 +56,15 @@
                     android:textSize="12sp"
                     android:textStyle="bold" />
 
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="34dp"
+                    android:layout_weight="1" />
+
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnEdit"
                     style="@style/Widget.MaterialComponents.Button.TextButton"
-                    android:layout_width="wrap_content"
+                    android:layout_width="53dp"
                     android:layout_height="wrap_content"
                     android:insetLeft="0dp"
                     android:insetTop="0dp"
@@ -68,7 +73,7 @@
                     android:padding="0dp"
                     android:textAllCaps="false"
                     app:icon="@drawable/ic_edit_my_report"
-                    app:iconSize="24dp"
+                    app:iconSize="30dp"
                     app:iconTint="@null" />
             </LinearLayout>
 
@@ -171,9 +176,10 @@
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnDetail"
-                    android:layout_width="185dp"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textSize="10dp"
                     android:backgroundTint="@color/lf_primary"
                     android:text="@string/open_detail"
                     android:textAllCaps="false"
@@ -184,24 +190,32 @@
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnStatus"
                     style="@style/Widget.MaterialComponents.Button.TextButton"
-                    android:layout_width="112dp"
+                    android:layout_width="150dp"
                     android:layout_height="match_parent"
-                    app:cornerRadius="8dp"
+                    android:textSize="10dp"
+                    android:autoText="true"
                     android:text="@string/mark_returned"
                     android:textAllCaps="false"
                     android:textColor="@color/lf_secondary"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:cornerRadius="8dp" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnDelete"
-                    style="@style/Widget.MaterialComponents.Button.TextButton"
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:textAlignment="center"
-                    android:text="@string/delete_report"
-                    android:textAllCaps="false"
-                    android:textColor="@color/lf_lost"
-                    android:textStyle="bold" /><![CDATA[
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    android:padding="0dp"
+                    app:cornerRadius="24dp"
+                    app:icon="@drawable/ic_delete_24"
+                    app:iconPadding="0dp"
+                    app:iconSize="30dp"
+                    app:iconTint="#ff0000"
+                    /><![CDATA[
 
                 >
             ]]>
