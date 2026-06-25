@@ -1,15 +1,220 @@
 <resources>
-<!--nama aplikasi-->
-    <string name="app_name">Lost&amp;Found</string>
-    <string name="welcome_title">Temukan Kebali Barang Anda</string>
+    <!--nama aplikasi-->
+    <string name="app_name">LostFound</string>
+    <string name="welcome_title">Temukan Kembali Barang Anda</string>
     <string name="welcome_description"> Laporkan dan cari barang hilang atau ditemukan di wilayah Kota Mataram.</string>
 
-<!--    tombol  -->
-    <string name="login">Masuk"></string>
-    <string name="register">Daftar Akun"></string>
+    <!--   tombol  -->
+    <string name="login">Masuk</string>
+    <string name="register">Daftar</string>
+    <string name="no_account">Belum punya akun?</string>
 
-    <string name="login_clicked">Tombol Masuk ditekan"></string>
-    <string name="register_clicked">Tombol Daftar ditekan"></string>
+    <string name="login_clicked">Tombol Masuk ditekan</string>
+    <string name="register_clicked">Tombol Daftar ditekan</string>
+
+    <!-- Halaman detail barang -->
+    <string name="detail_title">Detail Barang</string>
+    <string name="back">← Kembali</string>
+    <string name="category_label">Kategori</string>
+    <string name="location_label">Lokasi</string>
+    <string name="date_label">Tanggal Kejadian</string>
+    <string name="description_label">Deskripsi</string>
+    <string name="status_label">Status Laporan</string>
+    <string name="contact_label">Kontak Pelapor</string>
+    <string name="contact_reporter">Hubungi Pelapor</string>
+
+    <string name="report_lost">HILANG</string>
+    <string name="report_found">DITEMUKAN</string>
+    <string name="status_open">Belum selesai</string>
+    <string name="status_returned">Sudah dikembalikan</string>
+
+    <string name="value_not_available">Data tidak tersedia</string>
+    <string name="image_item_description">Foto barang</string>
+    <string name="whatsapp_not_available">Tidak dapat membuka WhatsApp atau browser</string>
+
+    <!-- Form laporan -->
+    <string name="add_report">Tambah Laporan</string>
+    <string name="add_report_title">Buat Laporan Barang</string>
+    <string name="add_report_description">
+    Masukkan informasi barang hilang atau ditemukan dengan lengkap.
+</string>
+
+    <string name="report_type_label">Jenis Laporan</string>
+    <string name="lost_item">Barang Hilang</string>
+    <string name="found_item">Barang Ditemukan</string>
+
+    <string name="item_name_label">Nama Barang</string>
+    <string name="item_name_hint">Contoh: Dompet Kulit Hitam</string>
+
+    <string name="category_form_label">Kategori</string>
+    <string name="area_form_label">Wilayah</string>
+
+    <string name="location_detail_label">Detail Lokasi</string>
+    <string name="location_detail_hint">
+    Contoh: Depan Lombok Epicentrum Mall
+    </string>
+
+    <string name="event_date_form_label">Tanggal Kejadian</string>
+    <string name="event_date_hint">Tekan untuk memilih tanggal</string>
+
+    <string name="item_description_form_label">Deskripsi</string>
+    <string name="item_description_hint">
+    Jelaskan ciri-ciri barang dengan lengkap
+    </string>
+
+    <string name="contact_form_label">Nomor WhatsApp</string>
+    <string name="contact_form_hint">Contoh: 081234567890</string>
+
+    <string name="photo_form_label">Foto Barang</string>
+    <string name="choose_image">Pilih Gambar</string>
+    <string name="no_image_selected">Belum ada gambar dipilih</string>
+    <string name="image_selected">Gambar berhasil dipilih</string>
+
+    <string name="save_report">Simpan Laporan</string>
+
+    <!-- Home dan RecyclerView -->
+    <string name="loading_reports">Memuat laporan...</string>
+    <string name="empty_reports">Belum ada laporan barang.</string>
+    <string name="failed_load_reports">Gagal memuat laporan: %1$s</string>
+
+    <string name="item_category_value">Kategori: %1$s</string>
+    <string name="item_location_value">Lokasi: %1$s</string>
+    <string name="item_date_value">Tanggal: %1$s</string>
+
+    <string name="email_not_available">Email tidak tersedia</string>
+    <string name="home_default_welcome">Selamat datang di LF Lost&amp;Found</string>
+    <string name="hello_user">Halo, %1$s</string>
+    <string name="logout_success">Berhasil keluar</string>
+
+    <!-- Halaman Laporan Saya -->
+    <string name="my_reports">Laporan Saya</string>
+    <string name="my_reports_title">Laporan Saya</string>
+    <string name="my_reports_description">
+    Kelola laporan barang yang pernah kamu buat.
+    </string>
+
+    <string name="loading_my_reports">Memuat laporan kamu...</string>
+    <string name="empty_my_reports">Kamu belum membuat laporan.</string>
+    <string name="failed_load_my_reports">
+    Gagal memuat laporan: %1$s
+    </string>
+
+    <string name="open_detail">Detail</string>
+    <string name="mark_returned">Tandai Selesai</string>
+    <string name="reopen_report">Buka Kembali</string>
+    <string name="delete_report">Hapus</string>
+
+    <string name="delete_report_title">Hapus Laporan</string>
+    <string name="delete_report_confirmation">
+    Apakah kamu yakin ingin menghapus laporan “%1$s”?
+    </string>
+    <string name="cancel">Batal</string>
+    <string name="delete">Hapus</string>
+
+    <string name="report_deleted">Laporan berhasil dihapus</string>
+    <string name="report_delete_failed">
+    Laporan gagal dihapus: %1$s
+    </string>
+
+    <string name="report_status_updated">
+    Status laporan berhasil diperbarui
+    </string>
+    <string name="report_status_update_failed">
+    Status gagal diperbarui: %1$s
+    </string>
+
+    <string name="session_not_found">Session pengguna tidak ditemukan</string>
+
+    <!-- Edit laporan -->
+    <string name="edit_report">Edit Laporan</string>
+    <string name="edit_report_title">Edit Laporan Barang</string>
+    <string name="edit_report_description">
+    Perbarui informasi laporan yang sebelumnya kamu buat.
+    </string>
+
+    <string name="full_location_label">Lokasi Lengkap</string>
+    <string name="full_location_hint">
+    Contoh: Depan Epicentrum Mall, Mataram, Kota Mataram
+    </string>
+
+    <string name="choose_new_image">Pilih Gambar Baru</string>
+    <string name="keeping_old_image">Menggunakan gambar laporan sebelumnya</string>
+    <string name="new_image_selected">Gambar baru berhasil dipilih</string>
+    <string name="update_report">Perbarui Laporan</string>
+    <string name="updating_report">Memperbarui laporan...</string>
+
+    <string name="report_updated">Laporan berhasil diperbarui</string>
+    <string name="report_update_failed">
+    Laporan gagal diperbarui: %1$s
+    </string>
+
+    <string name="loading_report">Memuat data laporan...</string>
+    <string name="report_not_found">Data laporan tidak ditemukan</string>
+    <string name="report_id_not_found">ID laporan tidak ditemukan</string>
+    <string name="no_edit_permission">
+    Kamu tidak memiliki izin untuk mengedit laporan ini
+    </string>
+
+    <!-- Pencarian dan filter -->
+    <string name="search_reports">Cari Laporan</string>
+    <string name="search_reports_title">Cari Barang</string>
+    <string name="search_reports_description">
+    Cari laporan barang hilang atau ditemukan di Kota Mataram.
+    </string>
+
+    <string name="search_hint">
+    Cari nama, kategori, lokasi, atau deskripsi
+    </string>
+
+    <string name="report_type_filter">Jenis Laporan</string>
+    <string name="category_filter">Kategori</string>
+    <string name="status_filter">Status</string>
+
+    <string name="reset_filter">Reset Filter</string>
+    <string name="loading_search_results">Memuat seluruh laporan...</string>
+    <string name="empty_search_results">
+    Tidak ada laporan yang sesuai dengan pencarian.
+    </string>
+
+    <string name="failed_search_results">
+    Gagal memuat laporan: %1$s
+    </string>
+
+    <string name="search_result_count">
+    %1$d laporan ditemukan
+    </string>
+
+    <!-- Bookmark -->
+    <string name="bookmarks">Bookmark</string>
+    <string name="bookmarks_title">Bookmark Saya</string>
+    <string name="bookmarks_description">
+    Laporan yang kamu simpan secara lokal pada perangkat ini.
+</string>
+
+    <string name="save_bookmark">Simpan</string>
+    <string name="saved_bookmark">Tersimpan</string>
+    <string name="bookmark_saved">Laporan berhasil disimpan ke Bookmark</string>
+    <string name="bookmark_removed">Laporan dihapus dari Bookmark</string>
+
+    <string name="loading_bookmarks">Memuat Bookmark...</string>
+    <string name="empty_bookmarks">
+    Belum ada laporan yang disimpan.
+</string>
+
+    <string name="bookmark_item_id_missing">
+    ID laporan tidak ditemukan
+</string>
+
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_search">Cari</string>
+    <string name="nav_add">Tambah</string>
+    <string name="nav_bookmark">Simpan</string>
+    <string name="nav_profile">Profil</string>
+
+    <string name="latest_reports">Laporan Terbaru</string>
+    <string name="manage_my_reports">Kelola Laporan Saya</string>
 
     <!-- Profil dan statistik -->
     <string name="profile_title">Profil Saya</string>
@@ -52,7 +257,21 @@
     Apakah kamu yakin ingin keluar dari akun?
 </string>
 
+    <!-- Pencarian terpisah -->
+    <string name="search_form_title">Cari Laporan</string>
+    <string name="search_form_description">
+    Masukkan kata kunci atau gunakan filter untuk menemukan laporan.
+</string>
 
+    <string name="search_now">Tampilkan Hasil</string>
+    <string name="search_result_title">Hasil Pencarian</string>
+    <string name="change_search">Ubah Pencarian</string>
 
+    <string name="search_result_count">%1$d laporan ditemukan</string>
+    <string name="search_result_empty">
+    Tidak ada laporan yang sesuai dengan pencarian.
+</string>
+
+    <string name="all_search_results">Menampilkan semua laporan</string>
 
 </resources>

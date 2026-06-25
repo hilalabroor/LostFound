@@ -144,7 +144,6 @@
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="16sp"
-                app:icon="@drawable/ic_person_add"
                 app:iconGravity="textStart"
                 app:cornerRadius="24dp" />
 

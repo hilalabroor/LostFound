@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <!-- Splash menjadi halaman pertama -->
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.lostfound.ui.splash.SplashFragment"
+        android:label="Splash">
+
+        <action
+            android:id="@+id/action_splashFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <!-- Welcome -->
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.lostfound.ui.welcome.WelcomeFragment"
+        android:label="Welcome">
+
+        <action
+            android:id="@+id/action_welcomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+
+        <action
+            android:id="@+id/action_welcomeFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+
+    </fragment>
+
+    <!-- Login -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.lostfound.ui.auth.LoginFragment"
+        android:label="Login">
+
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <!-- Register -->
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.lostfound.ui.auth.RegisterFragment"
+        android:label="Register">
+
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <!-- Home -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.lostfound.ui.home.HomeFragment"
+        android:label="Home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_detailItemFragment"
+            app:destination="@id/detailItemFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_addReportFragment"
+            app:destination="@id/addReportFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_myReportsFragment"
+            app:destination="@id/myReportsFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_bookmarksFragment"
+            app:destination="@id/bookmarksFragment" />
+
+    </fragment>
+
+    <!-- Laporan milik pengguna -->
+    <fragment
+        android:id="@+id/myReportsFragment"
+        android:name="com.example.lostfound.ui.myreports.MyReportsFragment"
+        android:label="Laporan Saya">
+
+        <action
+            android:id="@+id/action_myReportsFragment_to_detailItemFragment"
+            app:destination="@id/detailItemFragment" />
+
+        <action
+            android:id="@+id/action_myReportsFragment_to_editReportFragment"
+            app:destination="@id/editReportFragment" />
+
+    </fragment>
+
+    <!-- Profile -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.lostfound.ui.profile.ProfileFragment"
+        android:label="Profil">
+
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+
+        <action
+            android:id="@+id/action_profileFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <!-- Detail barang -->
+    <fragment
+        android:id="@+id/detailItemFragment"
+        android:name="com.example.lostfound.ui.detail.DetailItemFragment"
+        android:label="Detail Item" />
+
+    <!-- Form tambah laporan -->
+    <fragment
+        android:id="@+id/addReportFragment"
+        android:name="com.example.lostfound.ui.report.AddReportFragment"
+        android:label="Tambah Laporan" />
+
+
+
+    <!-- Edit laporan -->
+    <fragment
+        android:id="@+id/editReportFragment"
+        android:name="com.example.lostfound.ui.report.EditReportFragment"
+        android:label="Edit Laporan" />
+
+    <!-- Pencarian laporan -->
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.lostfound.ui.search.SearchFragment"
+        android:label="Cari Laporan">
+
+        <action
+            android:id="@+id/action_searchFragment_to_searchResultFragment"
+            app:destination="@id/searchResultFragment" />
+
+    </fragment>
+
+    <!-- Halaman hasil pencarian -->
+    <fragment
+        android:id="@+id/searchResultFragment"
+        android:name="com.example.lostfound.ui.search.SearchResultFragment"
+        android:label="Hasil Pencarian">
+
+        <action
+            android:id="@+id/action_searchResultFragment_to_detailItemFragment"
+            app:destination="@id/detailItemFragment" />
+
+    </fragment>
+
+    <!-- Bookmark lokal -->
+    <fragment
+        android:id="@+id/bookmarksFragment"
+        android:name="com.example.lostfound.ui.bookmarks.BookmarksFragment"
+        android:label="Bookmark">
+
+        <action
+            android:id="@+id/action_bookmarksFragment_to_detailItemFragment"
+            app:destination="@id/detailItemFragment" />
+
+    </fragment>
+
+    <!-- Edit profil pengguna -->
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.lostfound.ui.profile.EditProfileFragment"
+        android:label="Edit Profil" />
+
+</navigation>
