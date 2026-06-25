@@ -267,7 +267,6 @@
     <string name="search_result_title">Hasil Pencarian</string>
     <string name="change_search">Ubah Pencarian</string>
 
-    <string name="search_result_count">%1$d laporan ditemukan</string>
     <string name="search_result_empty">
     Tidak ada laporan yang sesuai dengan pencarian.
 </string>

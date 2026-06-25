@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="Lost &amp; Found Mataram"
+                android:text="Lost &amp; Found"
                 android:textColor="@color/lf_primary"
                 android:textSize="24sp"
                 android:textStyle="bold" />
