@@ -77,11 +77,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Kategori: Dompet"
+                android:text="Dompet"
                 android:textColor="@color/lf_text_secondary"
                 android:textSize="14sp"
-                app:drawableStartCompat="@android:drawable/ic_menu_info_details"
-                android:drawablePadding="8dp" />
+                app:drawableStartCompat="@drawable/ic_category_my_report"
+                android:drawablePadding="12dp" />
 
             <!-- Lokasi -->
             <TextView
@@ -91,11 +91,11 @@
                 android:layout_marginTop="4dp"
                 android:ellipsize="end"
                 android:maxLines="2"
-                android:text="Lokasi: Cakranegara"
+                android:text="Cakranegara"
                 android:textColor="@color/lf_text_secondary"
                 android:textSize="14sp"
-                app:drawableStartCompat="@android:drawable/ic_menu_mylocation"
-                android:drawablePadding="8dp" />
+                app:drawableStartCompat="@drawable/ic_location_my_report"
+                android:drawablePadding="11dp" />
 
             <!-- Tanggal -->
             <TextView
@@ -103,11 +103,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Tanggal: 22 Juni 2026"
+                android:text="22 Juni 2026"
                 android:textColor="@color/lf_text_secondary"
                 android:textSize="14sp"
-                app:drawableStartCompat="@android:drawable/ic_menu_my_calendar"
-                android:drawablePadding="8dp" />
+                app:drawableStartCompat="@drawable/ic_date_my_report"
+                android:drawablePadding="12dp" />
 
             <!-- Status laporan -->
             <TextView
