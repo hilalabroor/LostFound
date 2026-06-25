@@ -22,47 +22,23 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <!-- Nama aplikasi -->
-        <TextView
-            android:id="@+id/tvHomeTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="LF Lost&amp;Found"
-            android:textColor="@color/lf_primary"
-            android:textSize="25sp"
-            android:textStyle="bold" />
+
 
         <!-- Sapaan pengguna -->
+
         <TextView
-            android:id="@+id/tvWelcomeUser"
-            android:layout_width="match_parent"
+            android:id="@+id/tvHomeTitle"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="@string/home_default_welcome"
-            android:textColor="@color/lf_text_primary"
-            android:textSize="19sp"
+            android:gravity="center"
+            android:text="Lost&amp;Found"
+            android:textColor="@color/lf_primary"
+            android:textSize="30sp"
             android:textStyle="bold" />
 
-        <!-- Email pengguna -->
-        <TextView
-            android:id="@+id/tvUserEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
-            android:text="@string/email_not_available"
-            android:textColor="@color/lf_text_secondary"
-            android:textSize="13sp" />
 
-        <!-- Laporan milik pengguna -->
-        <Button
-            android:id="@+id/btnMyReports"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="@color/lf_secondary"
-            android:text="@string/manage_my_reports"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
+
+
 
     </LinearLayout>
 

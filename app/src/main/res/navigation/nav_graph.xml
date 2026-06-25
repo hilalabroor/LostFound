@@ -98,9 +98,6 @@
             android:id="@+id/action_homeFragment_to_addReportFragment"
             app:destination="@id/addReportFragment" />
 
-        <action
-            android:id="@+id/action_homeFragment_to_myReportsFragment"
-            app:destination="@id/myReportsFragment" />
 
         <action
             android:id="@+id/action_homeFragment_to_searchFragment"
@@ -139,9 +136,13 @@
             app:destination="@id/editProfileFragment" />
 
         <action
+            android:id="@+id/action_profileFragment_to_myReportsFragment"
+            app:destination="@id/myReportsFragment" />
+
+        <action
             android:id="@+id/action_profileFragment_to_welcomeFragment"
             app:destination="@id/welcomeFragment"
-            app:popUpTo="@id/homeFragment"
+            app:popUpTo="@id/nav_graph"
             app:popUpToInclusive="true" />
 
     </fragment>

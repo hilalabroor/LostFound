@@ -1,8 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.LostFound" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Warna saat kursor aktif -->
+        <item name="colorPrimary">@color/black</item>
+
+        <!-- Warna border saat tidak fokus -->
+        <item name="colorOutline">@color/black</item>
+
+        <!-- Warna background saat fokus -->
+        <item name="colorOnSurfaceVariant">@color/black</item>
+
     </style>
 
     <style name="Theme.LostFound" parent="Base.Theme.LostFound" />

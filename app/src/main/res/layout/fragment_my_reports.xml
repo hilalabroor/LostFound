@@ -33,7 +33,6 @@
             android:textColor="@color/lf_primary"
             android:textSize="16sp"
             android:textStyle="bold"
-            app:drawableStartCompat="@android:drawable/ic_menu_revert"
             android:drawablePadding="8dp" />
 
         <!-- Judul -->

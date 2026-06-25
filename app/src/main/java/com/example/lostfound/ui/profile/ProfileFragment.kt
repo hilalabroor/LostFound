@@ -74,6 +74,10 @@ class ProfileFragment : Fragment() {
             return
         }
 
+        /*
+         * Email berasal langsung dari
+         * Firebase Authentication.
+         */
         binding.tvEmailValue.text =
             currentUser.email
                 ?: getString(
@@ -86,10 +90,16 @@ class ProfileFragment : Fragment() {
         setupClickListeners()
     }
 
+    /*
+     * Mengambil data profil pengguna
+     * dari Firebase Realtime Database.
+     */
     private fun loadProfile(uid: String) {
 
         FirebaseDatabase
-            .getInstance(FirebaseConfig.DATABASE_URL)
+            .getInstance(
+                FirebaseConfig.DATABASE_URL
+            )
             .getReference("users")
             .child(uid)
             .get()
@@ -131,6 +141,7 @@ class ProfileFragment : Fragment() {
             }
     }
 
+
     private fun displayProfile(user: User) {
 
         val displayName =
@@ -151,10 +162,6 @@ class ProfileFragment : Fragment() {
                 )
             }
 
-        /*
-         * Mengambil huruf pertama nama
-         * untuk avatar.
-         */
         binding.tvAvatar.text =
             displayName
                 .trim()
@@ -163,6 +170,9 @@ class ProfileFragment : Fragment() {
                 ?: "U"
     }
 
+    /*
+     * Menghitung laporan milik pengguna.
+     */
     private fun loadReportStatistics(uid: String) {
 
         val query =
@@ -190,19 +200,20 @@ class ProfileFragment : Fragment() {
                     var completedReports = 0
 
                     for (
-                    itemSnapshot
-                    in snapshot.children
+                    itemSnapshot in snapshot.children
                     ) {
 
                         val item =
                             itemSnapshot.getValue(
                                 Item::class.java
-                            )
-                                ?: continue
+                            ) ?: continue
 
                         totalReports++
 
-                        if (item.status == STATUS_RETURNED) {
+                        if (
+                            item.status ==
+                            STATUS_RETURNED
+                        ) {
                             completedReports++
                         } else {
                             activeReports++
@@ -237,6 +248,9 @@ class ProfileFragment : Fragment() {
         query.addValueEventListener(listener)
     }
 
+    /*
+     * Menghitung jumlah bookmark lokal.
+     */
     private fun observeBookmarkCount(uid: String) {
 
         viewLifecycleOwner
@@ -257,7 +271,15 @@ class ProfileFragment : Fragment() {
             }
     }
 
+
     private fun setupClickListeners() {
+
+        binding.btnMyReports.setOnClickListener {
+
+            findNavController().navigate(
+                R.id.action_profileFragment_to_myReportsFragment
+            )
+        }
 
         binding.btnEditProfile.setOnClickListener {
 
@@ -333,9 +355,9 @@ class ProfileFragment : Fragment() {
         reportsQuery = null
         reportsListener = null
 
-        super.onDestroyView()
-
         _binding = null
+
+        super.onDestroyView()
     }
 
     companion object {

@@ -1,6 +1,6 @@
 <resources>
     <!--nama aplikasi-->
-    <string name="app_name">LostFound</string>
+    <string name="app_name">Lost&amp;Found</string>
     <string name="welcome_title">Temukan Kembali Barang Anda</string>
     <string name="welcome_description"> Laporkan dan cari barang hilang atau ditemukan di wilayah Kota Mataram.</string>
 
@@ -82,7 +82,7 @@
     <string name="item_date_value">Tanggal: %1$s</string>
 
     <string name="email_not_available">Email tidak tersedia</string>
-    <string name="home_default_welcome">Selamat datang di LF Lost&amp;Found</string>
+    <string name="home_default_welcome">Selamat datang di Lost&amp;Found</string>
     <string name="hello_user">Halo, %1$s</string>
     <string name="logout_success">Berhasil keluar</string>
 
@@ -236,11 +236,6 @@
     <string name="edit_profile">Edit Profil</string>
     <string name="logout">Keluar</string>
 
-    <string name="edit_profile_title">Edit Profil</string>
-    <string name="edit_profile_description">
-    Ubah nama dan nomor WhatsApp akun kamu.
-</string>
-
     <string name="profile_name_hint">Masukkan nama lengkap</string>
     <string name="profile_phone_hint">Contoh: 081234567890</string>
     <string name="save_profile">Simpan Perubahan</string>
@@ -272,5 +267,11 @@
 </string>
 
     <string name="all_search_results">Menampilkan semua laporan</string>
+
+
+    <string name="manage_reports_description"> Lihat, ubah, dan hapus laporan milik Anda </string>
+    <string name="edit_profile_description"> Perbarui nama dan nomor WhatsApp</string>
+    <string name="logout_description"> Keluar dari akun Lost&amp;Found </string>
+
 
 </resources>
