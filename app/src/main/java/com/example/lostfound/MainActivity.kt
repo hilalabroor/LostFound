@@ -1,40 +1,84 @@
 package com.example.lostfound
 
 import android.os.Bundle
-import android.widget.Toast
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
 import com.example.lostfound.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    // Variabel binding untuk akses komponen XML
     private lateinit var binding: ActivityMainBinding
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(
+        savedInstanceState: Bundle?
+    ) {
         super.onCreate(savedInstanceState)
 
-        // Membuat objek binding dari activity_main.xml
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(
+            layoutInflater
+        )
 
-        // Menampilkan layout activity_main.xml ke layar
         setContentView(binding.root)
 
-        // Aksi ketika tombol Masuk ditekan
-        binding.btnLogin.setOnClickListener {
-            Toast.makeText(
-                this,
-                getString(R.string.login_clicked),
-                Toast.LENGTH_SHORT
-            ).show()
+        setupBottomNavigation()
+    }
+
+    private fun setupBottomNavigation() {
+
+        /*
+         * Mengambil NavHostFragment dari Activity.
+         * Menggunakan "as?" supaya aplikasi tidak langsung
+         * crash jika Fragment tidak ditemukan.
+         */
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(
+                R.id.navHostFragment
+            ) as? NavHostFragment
+
+        /*
+         * Jika null, berarti ID activity_main.xml
+         * tidak sesuai dengan MainActivity.
+         */
+        if (navHostFragment == null) {
+            binding.bottomNavigation.visibility = View.GONE
+            return
         }
 
-        // Aksi ketika tombol Daftar ditekan
-        binding.btnRegister.setOnClickListener {
-            Toast.makeText(
-                this,
-                getString(R.string.register_clicked),
-                Toast.LENGTH_SHORT
-            ).show()
+        val navController =
+            navHostFragment.navController
+
+        /*
+         * Menghubungkan Bottom Navigation dengan NavController.
+         */
+        binding.bottomNavigation.setupWithNavController(
+            navController
+        )
+
+        /*
+         * Bottom Navigation hanya tampil
+         * pada lima halaman utama.
+         */
+        val mainDestinations = setOf(
+            R.id.homeFragment,
+            R.id.searchFragment,
+            R.id.addReportFragment,
+            R.id.bookmarksFragment,
+            R.id.profileFragment
+        )
+
+        navController.addOnDestinationChangedListener {
+                _,
+                destination,
+                _ ->
+
+            binding.bottomNavigation.visibility =
+                if (destination.id in mainDestinations) {
+                    View.VISIBLE
+                } else {
+                    View.GONE
+                }
         }
     }
 }

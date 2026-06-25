@@ -7,7 +7,26 @@
     <color name="lf_text_primary">#0F172A</color>
     <color name="lf_text_secondary">#4A5568</color>
     <color name="white">#FFFFFF</color>
+    <color name="gray">#78909C</color>
     <color name="black">#000000</color>
+
+    <!-- Warna laporan barang hilang -->
+    <color name="lf_lost">#DC2626</color>
+
+    <!-- Warna laporan barang ditemukan -->
+    <color name="lf_found">#059669</color>
+
+    <!-- Warna latar kartu -->
+    <color name="lf_card">#FFFFFF</color>
+
+    <!-- Warna garis kartu -->
+    <color name="lf_border">#E2E8F0</color>
+
+    <!-- Warna status terbuka -->
+    <color name="lf_status_open">#D97706</color>
+
+    <!-- Warna status selesai -->
+    <color name="lf_status_returned">#0284C7</color>
 
 
 </resources>
