@@ -79,18 +79,29 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
                     android:minHeight="48dp"
+                    android:button="@android:color/transparent"
+                    android:buttonTint="@android:color/transparent"
+                    android:background="@drawable/bg_report_type_button"
+                    android:gravity="center"
                     android:text="@string/lost_item"
-                    android:textColor="@color/lf_text_primary" />
+                    android:textColor="@color/color_report_type_text"
+                    android:checked="true" />
 
                 <RadioButton
                     android:id="@+id/rbFound"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:layout_marginStart="8dp"
                     android:minHeight="48dp"
+                    android:button="@android:color/transparent"
+                    android:buttonTint="@android:color/transparent"
+                    android:background="@drawable/bg_report_type_button"
+                    android:gravity="center"
                     android:text="@string/found_item"
-                    android:textColor="@color/lf_text_primary" />
+                    android:textColor="@color/color_report_type_text" />
 
             </RadioGroup>
 
@@ -100,6 +111,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
                 android:hint="@string/item_name_label">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -125,7 +140,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 app:cardBackgroundColor="@android:color/transparent"
-                app:cardCornerRadius="4dp"
+                app:cardCornerRadius="16dp"
                 app:cardElevation="0dp"
                 app:strokeColor="@color/lf_border"
                 app:strokeWidth="1dp">
@@ -135,8 +150,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="56dp"
                     android:entries="@array/item_categories"
-                    android:paddingStart="12dp"
-                    android:paddingEnd="12dp" />
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp" />
             </com.google.android.material.card.MaterialCardView>
 
             <!-- Lokasi lengkap -->
@@ -145,6 +160,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
                 android:hint="@string/full_location_label">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -162,6 +181,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
                 android:hint="@string/event_date_form_label"
                 app:endIconDrawable="@android:drawable/ic_menu_my_calendar"
                 app:endIconMode="custom">
@@ -182,6 +205,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
                 android:hint="@string/item_description_form_label">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -199,6 +226,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
                 android:hint="@string/contact_form_label"
                 app:startIconDrawable="@android:drawable/ic_menu_call">
 
@@ -225,7 +257,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="220dp"
                 android:layout_marginTop="12dp"
-                app:cardCornerRadius="12dp"
+                app:cardCornerRadius="16dp"
                 app:cardElevation="0dp"
                 app:strokeColor="@color/lf_border"
                 app:strokeWidth="1dp">
@@ -260,7 +292,7 @@
                 android:textAllCaps="false"
                 android:textColor="@color/lf_secondary"
                 android:textStyle="bold"
-                app:cornerRadius="8dp"
+                app:cornerRadius="16dp"
                 app:icon="@android:drawable/ic_menu_camera"
                 app:iconGravity="textStart"
                 app:iconTint="@color/lf_secondary"
@@ -278,7 +310,7 @@
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:backgroundTint="@color/lf_primary"
-                app:cornerRadius="8dp" />
+                app:cornerRadius="16dp" />
 
         </LinearLayout>
 
