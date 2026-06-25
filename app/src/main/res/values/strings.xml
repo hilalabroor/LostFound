@@ -1,16 +1,16 @@
 <resources>
     <!--nama aplikasi-->
-    <string name="app_name">Lost&amp;Found</string>
+    <string name="app_name">LostFound</string>
     <string name="welcome_title">Temukan Kembali Barang Anda</string>
     <string name="welcome_description"> Laporkan dan cari barang hilang atau ditemukan di wilayah Kota Mataram.</string>
 
     <!--   tombol  -->
-    <string name="login">Masuk"></string>
-    <string name="register">Daftar"></string>
+    <string name="login">Masuk</string>
+    <string name="register">Daftar</string>
     <string name="no_account">Belum punya akun?</string>
 
-    <string name="login_clicked">Tombol Masuk ditekan"></string>
-    <string name="register_clicked">Tombol Daftar ditekan"></string>
+    <string name="login_clicked">Tombol Masuk ditekan</string>
+    <string name="register_clicked">Tombol Daftar ditekan</string>
 
     <!-- Halaman detail barang -->
     <string name="detail_title">Detail Barang</string>

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 <!--    warna apk   -->
-    <color name="lf_primary">#0061B0</color> <!--  -->
-    <color name="lf_background">#F8FAFC</color>">
+    <color name="lf_primary">#0061B0</color>
+    <color name="lf_secondary">#42A5F5</color>
+    <color name="lf_background">#F8FAFC</color>
     <color name="lf_background_splash">#1565C0</color>
     <color name="lf_text_primary">#0F172A</color>
     <color name="lf_text_secondary">#4A5568</color>
@@ -27,6 +28,5 @@
 
     <!-- Warna status selesai -->
     <color name="lf_status_returned">#0284C7</color>
-
 
 </resources>
