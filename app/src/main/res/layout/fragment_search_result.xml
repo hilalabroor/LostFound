@@ -21,17 +21,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <!-- Kembali -->
-        <TextView
+        <ImageView
             android:id="@+id/btnBack"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:gravity="center_vertical"
-            android:paddingEnd="16dp"
-            android:text="@string/back"
-            android:textColor="@color/lf_primary"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Kembali"
+            android:src="@drawable/ic_arrow_back"
+            />
 
         <!-- Judul -->
         <TextView

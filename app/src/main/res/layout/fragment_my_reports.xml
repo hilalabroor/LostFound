@@ -35,6 +35,8 @@
             android:drawablePadding="8dp" />
 
         <!-- Judul -->
+
+        <!-- Penjelasan -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -44,7 +46,6 @@
             android:textSize="28sp"
             android:textStyle="bold" />
 
-        <!-- Penjelasan -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

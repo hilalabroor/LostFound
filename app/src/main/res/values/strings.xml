@@ -188,7 +188,7 @@
     <string name="bookmarks">Bookmark</string>
     <string name="bookmarks_title">Bookmark Saya</string>
     <string name="bookmarks_description">
-    Laporan yang kamu simpan secara lokal pada perangkat ini.
+    Daftar Laporan yang Kamu simpan.
 </string>
 
     <string name="save_bookmark">Simpan</string>
@@ -219,7 +219,7 @@
     <!-- Profil dan statistik -->
     <string name="profile_title">Profil Saya</string>
     <string name="profile_description">
-    Informasi akun dan aktivitas laporan kamu.
+    Informasi akun dan aktivitas laporan.
 </string>
 
     <string name="name_label">Nama</string>
