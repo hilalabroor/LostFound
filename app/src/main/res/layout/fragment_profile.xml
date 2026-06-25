@@ -21,15 +21,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
-=======
-            android:text="@string/profile_title"
->>>>>>> ea583b5c792fa01d7cd96dd7c2fbffdc653c8f58
             android:textColor="@color/lf_text_primary"
             android:textSize="28sp"
             android:textStyle="bold" />
 
-<<<<<<< HEAD
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -110,57 +105,10 @@
             android:layout_height="190dp"
             android:layout_marginTop="16dp"
             app:cardCornerRadius="12dp">
-=======
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            android:text="@string/profile_description"
-            android:textColor="@color/lf_text_secondary"
-            android:textSize="14sp" />
-
-        <!-- Avatar -->
-        <TextView
-            android:id="@+id/tvAvatar"
-            android:layout_width="92dp"
-            android:layout_height="92dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="28dp"
-            android:background="@drawable/bg_profile_avatar"
-            android:gravity="center"
-            android:text="U"
-            android:textColor="@color/white"
-            android:textSize="36sp"
-            android:textStyle="bold" />
-
-        <!-- Nama utama -->
-        <TextView
-            android:id="@+id/tvProfileName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:gravity="center"
-            android:text="Pengguna"
-            android:textColor="@color/lf_text_primary"
-            android:textSize="21sp"
-            android:textStyle="bold" />
-
-        <!-- Card informasi akun -->
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            app:cardBackgroundColor="@color/lf_card"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="2dp"
-            app:strokeColor="@color/lf_border"
-            app:strokeWidth="1dp">
->>>>>>> ea583b5c792fa01d7cd96dd7c2fbffdc653c8f58
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
                 android:orientation="vertical">
 
                 <!-- Edit Profil -->
@@ -243,75 +191,6 @@
                         android:layout_height="20dp"
                         android:src="@drawable/ic_chevron_right"/>
                 </LinearLayout>
-=======
-                android:orientation="vertical"
-                android:padding="18dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/name_label"
-                    android:textColor="@color/lf_text_secondary"
-                    android:textSize="12sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/tvNameValue"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="-"
-                    android:textColor="@color/lf_text_primary"
-                    android:textSize="16sp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="14dp"
-                    android:layout_marginBottom="14dp"
-                    android:background="@color/lf_border" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/email_label"
-                    android:textColor="@color/lf_text_secondary"
-                    android:textSize="12sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/tvEmailValue"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="-"
-                    android:textColor="@color/lf_text_primary"
-                    android:textSize="16sp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="14dp"
-                    android:layout_marginBottom="14dp"
-                    android:background="@color/lf_border" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/phone_label"
-                    android:textColor="@color/lf_text_secondary"
-                    android:textSize="12sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/tvPhoneValue"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="@string/phone_not_available"
-                    android:textColor="@color/lf_text_primary"
-                    android:textSize="16sp" />
->>>>>>> ea583b5c792fa01d7cd96dd7c2fbffdc653c8f58
 
             </LinearLayout>
 
@@ -324,11 +203,7 @@
             android:layout_marginTop="26dp"
             android:text="@string/activity_statistics"
             android:textColor="@color/lf_text_primary"
-<<<<<<< HEAD
             android:textSize="30sp"
-=======
-            android:textSize="19sp"
->>>>>>> ea583b5c792fa01d7cd96dd7c2fbffdc653c8f58
             android:textStyle="bold" />
 
         <!-- Baris statistik pertama -->
@@ -360,11 +235,7 @@
                         android:layout_height="wrap_content"
                         android:text="0"
                         android:textColor="@color/lf_primary"
-<<<<<<< HEAD
                         android:textSize="30sp"
-=======
-                        android:textSize="28sp"
->>>>>>> ea583b5c792fa01d7cd96dd7c2fbffdc653c8f58
                         android:textStyle="bold" />
 
                     <TextView
@@ -513,35 +384,6 @@
 
         </LinearLayout>
 
-<<<<<<< HEAD
-=======
-        <!-- Edit Profil -->
-        <Button
-            android:id="@+id/btnEditProfile"
-            android:layout_width="match_parent"
-            android:layout_height="54dp"
-            android:layout_marginTop="26dp"
-            android:backgroundTint="@color/lf_primary"
-            android:text="@string/edit_profile"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="15sp"
-            android:textStyle="bold" />
-
-        <!-- Logout -->
-        <Button
-            android:id="@+id/btnLogout"
-            android:layout_width="match_parent"
-            android:layout_height="54dp"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="@color/lf_lost"
-            android:text="@string/logout"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="15sp"
-            android:textStyle="bold" />
-
->>>>>>> ea583b5c792fa01d7cd96dd7c2fbffdc653c8f58
     </LinearLayout>
 
 </ScrollView>
