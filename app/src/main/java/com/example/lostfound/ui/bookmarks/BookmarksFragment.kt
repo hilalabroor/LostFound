@@ -64,7 +64,6 @@ class BookmarksFragment : Fragment() {
                 .bookmarkDao()
 
         setupRecyclerView()
-        setupClickListeners()
         loadBookmarks()
     }
 
@@ -98,12 +97,6 @@ class BookmarksFragment : Fragment() {
         )
     }
 
-    private fun setupClickListeners() {
-
-        binding.btnBack.setOnClickListener {
-            findNavController().navigateUp()
-        }
-    }
 
     private fun loadBookmarks() {
 

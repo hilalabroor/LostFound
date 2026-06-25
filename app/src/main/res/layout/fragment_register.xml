@@ -54,6 +54,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etName"
+                    android:textColor="@android:color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Nama Lengkap"
@@ -72,6 +73,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etEmail"
+                    android:textColor="@android:color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Alamat Email"
@@ -90,6 +92,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etPhone"
+                    android:textColor="@android:color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Nomor WhatsApp"
@@ -109,6 +112,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etPassword"
+                    android:textColor="@android:color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Kata Sandi"
@@ -127,6 +131,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etConfirmPassword"
+                    android:textColor="@android:color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Konfirmasi Kata Sandi"

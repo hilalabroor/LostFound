@@ -95,7 +95,6 @@ class HomeFragment : Fragment() {
         setupRecyclerView()
         observeBookmarks()
         loadItemsFromFirebase()
-        setupClickListeners()
     }
 
     /*
@@ -109,84 +108,16 @@ class HomeFragment : Fragment() {
             auth.currentUser
 
         if (currentUser == null) {
-
             findNavController().navigate(
                 R.id.action_homeFragment_to_welcomeFragment
             )
-
             return false
         }
 
-        binding.tvUserEmail.text =
-            currentUser.email
-                ?: getString(
-                    R.string.email_not_available
-                )
-
-        loadUserName(
-            currentUser.uid
-        )
-
         return true
-    }
+        }
 
-    /*
-     * Membaca nama pengguna dari Firebase.
-     */
-    private fun loadUserName(
-        uid: String
-    ) {
 
-        val userReference =
-            FirebaseDatabase
-                .getInstance(
-                    FirebaseConfig.DATABASE_URL
-                )
-                .getReference("users")
-                .child(uid)
-
-        userReference
-            .get()
-            .addOnCompleteListener { task ->
-
-                if (_binding == null) {
-                    return@addOnCompleteListener
-                }
-
-                if (task.isSuccessful) {
-
-                    val user =
-                        task.result.getValue(
-                            User::class.java
-                        )
-
-                    binding.tvWelcomeUser.text =
-                        if (
-                            user != null &&
-                            user.name.isNotEmpty()
-                        ) {
-
-                            getString(
-                                R.string.hello_user,
-                                user.name
-                            )
-
-                        } else {
-
-                            getString(
-                                R.string.home_default_welcome
-                            )
-                        }
-
-                } else {
-
-                    binding.tvWelcomeUser.text =
-                        getString(
-                            R.string.home_default_welcome
-                        )
-                }
-            }
-    }
 
     /*
      * Menyiapkan RecyclerView laporan.
@@ -541,20 +472,6 @@ class HomeFragment : Fragment() {
         )
     }
 
-    /*
-     * Hanya tombol Laporan Saya yang
-     * masih berada langsung pada Home.
-     */
-    private fun setupClickListeners() {
-
-        binding.btnMyReports
-            .setOnClickListener {
-
-                findNavController().navigate(
-                    R.id.action_homeFragment_to_myReportsFragment
-                )
-            }
-    }
 
     override fun onDestroyView() {
 

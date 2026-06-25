@@ -95,9 +95,6 @@ class AddReportFragment : Fragment() {
 
     private fun setupClickListeners() {
 
-        binding.btnBack.setOnClickListener {
-            findNavController().navigateUp()
-        }
 
         binding.etEventDate.setOnClickListener {
             showDatePicker()
@@ -576,8 +573,6 @@ class AddReportFragment : Fragment() {
         binding.btnChooseImage.isEnabled =
             !isLoading
 
-        binding.btnBack.isEnabled =
-            !isLoading
 
         binding.etItemName.isEnabled =
             !isLoading

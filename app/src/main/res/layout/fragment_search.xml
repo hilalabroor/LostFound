@@ -63,6 +63,7 @@
 
                 <EditText
                     android:id="@+id/etSearch"
+                    android:textColor="@android:color/black"
                     android:layout_width="match_parent"
                     android:layout_height="56dp"
                     android:layout_marginTop="8dp"
@@ -84,6 +85,7 @@
 
                 <Spinner
                     android:id="@+id/spReportType"
+                    android:textColor="@android:color/black"
                     android:layout_width="match_parent"
                     android:layout_height="56dp"
                     android:layout_marginTop="8dp"
@@ -101,6 +103,7 @@
 
                 <Spinner
                     android:id="@+id/spCategory"
+                    android:textColor="@android:color/black"
                     android:layout_width="match_parent"
                     android:layout_height="56dp"
                     android:layout_marginTop="8dp"
@@ -118,6 +121,7 @@
 
                 <Spinner
                     android:id="@+id/spStatus"
+                    android:textColor="@android:color/black"
                     android:layout_width="match_parent"
                     android:layout_height="56dp"
                     android:layout_marginTop="8dp"
